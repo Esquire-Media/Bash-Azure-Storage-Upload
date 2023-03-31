@@ -57,7 +57,7 @@ x_ms_date_h="x-ms-date:$request_date"
 x_ms_blob_type_h="x-ms-blob-type:BlockBlob"
 
 # Build URI
-SAS="sv=2020-10-02&st=${SIGNATURE_START}&se=${SIGNATURE_END}&sr=c&sp=acwl&sig=${SECURE_ACCESS_SIGNATURE}"
+SAS="sv=2021-10-04&st=${SIGNATURE_START}&se=${SIGNATURE_END}&sr=c&sp=acwl&sig=${SECURE_ACCESS_SIGNATURE}"
 URI="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${DESTINATION_FILE_PATH}?${SAS}"
 
 # Upload file
